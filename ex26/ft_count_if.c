@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edbaudou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/06 16:05:51 by edbaudou          #+#    #+#             */
-/*   Updated: 2019/02/06 16:18:15 by edbaudou         ###   ########.fr       */
+/*   Created: 2019/02/18 23:34:53 by edbaudou          #+#    #+#             */
+/*   Updated: 2019/02/20 23:03:35 by edbaudou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
+int		ft_count_if(char **tab, int (*f)(char*))
 {
-	int tmp;
+	int		i;
+	int		count;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	i = 0;
+	count = 0;
+	while (tab[i] != 0)
+	{
+		if (f(tab[i]) == 1)
+			count++;
+		i++;
+	}
+	return (count);
 }
