@@ -6,11 +6,11 @@
 /*   By: edbaudou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/06 16:13:01 by edbaudou          #+#    #+#             */
-/*   Updated: 2019/02/26 10:53:51 by edbaudou         ###   ########.fr       */
+/*   Updated: 2019/04/02 15:54:41 by edbaudou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/header.h"
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
